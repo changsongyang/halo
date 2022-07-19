@@ -29,4 +29,12 @@ public class BasePostSimpleDTO extends BasePostMinimalDTO {
     private Integer topPriority;
 
     private Long likes;
+
+    private Long wordCount;
+
+    private Boolean inProgress;
+
+    public boolean isTopped() {
+        return this.topPriority != null && this.topPriority > 0;
+    }
 }
